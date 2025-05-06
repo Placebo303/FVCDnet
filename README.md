@@ -2,6 +2,8 @@
 
 [![GitHub license](https://img.shields.io/github/license/Placebo303/FVCDnet.svg)](https://github.com/Placebo303/FVCDnet/blob/main/LICENSE)
 
+# F-VCD Network (Optimized by Kai Yang, based on Fei Lab's original F-VCD)
+
 **F-VCD** is a deep learning-based approach for microscopy image restoration and enhancement in the Fourier domain. This repository contains the official implementation of the F-VCD network as described in our paper.
 
 ## 🧠 Overview
@@ -83,12 +85,31 @@ This project is licensed under the [MIT License](https://github.com/Placebo303/F
 
 ## 🙏 Acknowledgments
 
-- Original implementation by: feilab-hust/F-VCD  
-- Supported by: [Funding agency/organization]
+- Original implementation by: feilab-hust/F-VCD
+
+## 👤 Author Contributions
+
+This repository includes practical adaptations and minor improvements by **Kai Yang (Placebo303)**, based on the original implementation by Fei Lab.
+
+The key modifications are:
+- [✓] Adapted and debugged the training and inference pipeline for stable execution on the Paperspace cloud platform
+- [✓] Improved data loading efficiency by converting `.tif` datasets to `.npy` format
+- [✓] Restructured the inference process into two stages to avoid image parameter mismatch failures
+- [✓] Fixed several compatibility issues related to environment setup and file paths
+
+For academic reference to this modified version, please cite as:
+
+```bibtex
+@misc{yangkai-fvcd,
+  author = {Kai Yang},
+  title = {F-VCDnet: Practical Adaptation for Fourier Light Field Microscopy on Cloud Platforms},
+  year = {2025},
+  note = {Adapted version based on Fei Lab's F-VCD. GitHub: https://github.com/Placebo303/FVCDnet}
+}
 
 ## 📬 Contact
 
-For questions, bug reports, or contributions, feel free to open an issue or contact the repository owner.
+For questions, bug reports, or contributions, feel free to open an issue or contact the repository owner at micheal_yangkai@foxmail.com
 
 _Last updated: 2025-05-06 by Placebo303_
 
@@ -98,6 +119,8 @@ _Last updated: 2025-05-06 by Placebo303_
 # F-VCD 网络（傅里叶光场显微成像视角频道深度网络）
 
 [![GitHub license](https://img.shields.io/github/license/Placebo303/FVCDnet.svg)](https://github.com/Placebo303/FVCDnet/blob/main/LICENSE)
+
+# F-VCD 网络（由Placebo303优化，基于 Fei Lab 的原始 F-VCD）
 
 **F-VCD** 是一种基于深度学习的方法，用于在傅里叶域中对显微图像进行恢复与增强。本仓库包含了我们论文中所描述的 F-VCD 网络的官方实现。
 
@@ -181,10 +204,29 @@ F-VCD 可应用于多种显微图像恢复任务，详细示例请参考笔记�
 ## 🙏 致谢
 
 - 原始实现：feilab-hust/F-VCD  
-- 本项目受：[资助机构] 资助支持
+
+## 👤 作者贡献
+
+本仓库在 Fei Lab 的原始 F-VCD 实现基础上，由 **Kai Yang（GitHub ID: Placebo303）** 进行了实际部署和部分适配优化。
+
+主要修改包括：
+- [✓] 将训练与推理流程适配到 Paperspace 云平台，修复运行过程中出现的兼容性问题  
+- [✓] 为提高数据加载效率，将原始 `.tif` 图像数据预处理为 `.npy` 格式  
+- [✓] 将推理流程拆分为两步执行，避免因图像参数不匹配导致中断  
+- [✓] 修复部分环境配置与路径处理相关的问题，提升整体稳定性  
+
+如需在学术中引用本修改版本，可使用以下格式：
+
+```bibtex
+@misc{yangkai-fvcd,
+  author = {Kai Yang},
+  title = {F-VCDnet: Practical Adaptation for Fourier Light Field Microscopy on Cloud Platforms},
+  year = {2025},
+  note = {Adapted version based on Fei Lab's F-VCD. GitHub: https://github.com/Placebo303/FVCDnet}
+}
 
 ## 📬 联系方式
 
-如有问题或建议，欢迎在 GitHub 上提交 Issue 或联系仓库维护者。
+如有问题或建议，欢迎在 GitHub 上提交 Issue 或使用邮件地址：micheal_yangkai@foxmail.com联系仓库维护者
 
 _最后更新于：2025 年 5 月 6 日，由 Placebo303_
