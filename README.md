@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/Placebo303/FVCDnet.svg)](https://github.com/Placebo303/FVCDnet/blob/main/LICENSE)
 
-# F-VCD Network (Optimized by Kai Yang, based on Fei Lab's original F-VCD)
+## F-VCD Network (Optimized by Kai Yang, based on Fei Lab's original F-VCD)
 
 **F-VCD** is a deep learning-based approach for microscopy image restoration and enhancement in the Fourier domain. This repository contains the official implementation of the F-VCD network as described in our paper.
 
@@ -106,6 +106,7 @@ For academic reference to this modified version, please cite as:
   year = {2025},
   note = {Adapted version based on Fei Lab's F-VCD. GitHub: https://github.com/Placebo303/FVCDnet}
 }
+```
 
 ## 📬 Contact
 
@@ -120,7 +121,7 @@ _Last updated: 2025-05-06 by Placebo303_
 
 [![GitHub license](https://img.shields.io/github/license/Placebo303/FVCDnet.svg)](https://github.com/Placebo303/FVCDnet/blob/main/LICENSE)
 
-# F-VCD 网络（由Placebo303优化，基于 Fei Lab 的原始 F-VCD）
+## F-VCD 网络（由Placebo303优化，基于 Fei Lab 的原始 F-VCD）
 
 **F-VCD** 是一种基于深度学习的方法，用于在傅里叶域中对显微图像进行恢复与增强。本仓库包含了我们论文中所描述的 F-VCD 网络的官方实现。
 
@@ -224,7 +225,7 @@ F-VCD 可应用于多种显微图像恢复任务，详细示例请参考笔记�
   year = {2025},
   note = {Adapted version based on Fei Lab's F-VCD. GitHub: https://github.com/Placebo303/FVCDnet}
 }
-
+```
 ## 📬 联系方式
 
 如有问题或建议，欢迎在 GitHub 上提交 Issue 或使用邮件地址：micheal_yangkai@foxmail.com联系仓库维护者
