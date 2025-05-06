@@ -1,0 +1,36 @@
+# 排除大型数据文件
+*.npy
+*.h5
+*.hdf5
+*.pkl
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.tar
+*.gz
+*.zip
+*.rar
+*.7z
+
+# 排除训练生成的大型日志
+data_npy/**/events.out.tfevents.*
+logs/**
+tensorboard/**
+
+# 排除缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.DS_Store
+
+# 排除大型数据目录
+data_npy/**/SR_*/prediction/**
+data_npy/**/SR_*/hr/**
+data_npy/**/SR_*/lr/**
+data_npy/**/SR_*/weights/**
+
+# 排除垃圾箱目录
+.Trash*/
+.trash*/

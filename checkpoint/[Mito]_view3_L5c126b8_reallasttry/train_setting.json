@@ -1,0 +1,71 @@
+{
+    "img_setting": {
+        "img_size": 160,
+        "sr_factor": 1,
+        "ReScale_factor": [
+            3,
+            3
+        ],
+        "Nnum": 3,
+        "n_channels": 8,
+        "n_slices": 41,
+        "Target3D": "/notebooks/Code/DL_net/data_npy/Mito_View3_[LF160_SF160_WF480]/Stack_normalized/",
+        "Synth_view": "/notebooks/Code/DL_net/data_npy/Mito_View3_[LF160_SF160_WF480]/HR/",
+        "LFP": "/notebooks/Code/DL_net/data_npy/Mito_View3_[LF160_SF160_WF480]/LR/"
+    },
+    "preprocess": {
+        "normalize_mode": "percentile",
+        "LFP_type": null,
+        "SynView_type": null,
+        "discard_view": []
+    },
+    "net_setting": {
+        "SR_model": "F_Denoise",
+        "Recon_model": "F_Recon",
+        "is_bias": false
+    },
+    "Pretrain": {
+        "loading_pretrain_model": false,
+        "ckpt_dir": "/"
+    },
+    "TRAIN": {
+        "test_saving_path": "/notebooks/Code/DL_net/sample/test/[Mito]_view3_L5c126b8_reallasttry",
+        "ckpt_saving_interval": 10,
+        "ckpt_dir": "/notebooks/Code/DL_net/checkpoint/[Mito]_view3_L5c126b8_reallasttry",
+        "log_dir": "/notebooks/Code/DL_net/log/[Mito]_view3_L5c126b8_reallasttry",
+        "valid_on_the_fly": false,
+        "sample_ratio": 1.0,
+        "shuffle_all_data": false,
+        "shuffle_for_epoch": true,
+        "device": 0,
+        "batch_size": 4,
+        "lr_init": 0.0001,
+        "beta1": 0.9,
+        "n_epoch": 150,
+        "lr_decay": 0.5,
+        "decay_every": 50
+    },
+    "Loss": {
+        "Ratio": [
+            0.1,
+            0.9
+        ],
+        "SR_loss": {
+            "weighted_mae_loss": 1.0
+        },
+        "Recon_loss": {
+            "weighted_mse_loss": 1.0,
+            "edge_loss": 0.1
+        }
+    },
+    "VALID": {
+        "lf2d_path": "/notebooks/Code/DL_net/data_npy/Mito_View3_[LF160_SF160_WF480]/LR/",
+        "save_type": "LFP",
+        "saving_path": "/notebooks/Code/DL_net/data_npy/Mito_View3_[LF160_SF160_WF480]/LR/SR_[Mito]_view3_L5c126b8_reallasttry/",
+        "gt_path": "/notebooks/Code/DL_net/data/Mito_View3_[LF160_SF160_WF480]/Stack"
+    },
+    "label": "[Mito]_view3_L5c126b8_reallasttry",
+    "channels_interp": 126,
+    "n_interp": 1,
+    "sub_pixel": 3
+}
